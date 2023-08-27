@@ -2,6 +2,7 @@ package com.project.todolist.exception;
 
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -9,8 +10,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 
 @Data
-@NoArgsConstructor
+@NoArgsConstructorcd
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
+@EqualsAndHashCode(callSuper=false)
 public class ResourceNotFoundException extends RuntimeException{
 
     private String resourceName;
