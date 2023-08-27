@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 
 @Data
-@NoArgsConstructorgi
+@NoArgsConstructor
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
 @EqualsAndHashCode(callSuper=false)
 public class ResourceNotFoundException extends RuntimeException{
